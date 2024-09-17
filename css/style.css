@@ -726,6 +726,12 @@ a:hover {
 .portfolio-filter-item {
   margin-right: 8px;
 }
+
+.portfolio-filter-item:is(:hover, :focus) {
+  animation: pulse; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s; /* don't forget to set a duration! */
+}
+
 .portfolio-filter-button {
   background-color: #F5F4FA;
   border-radius: 4px;
@@ -762,7 +768,7 @@ a:hover {
 }
 
 .portfolio-item:is(:hover, :focus) {
-  animation: pulse; /* referring directly to the animation's @keyframe declaration */
+  animation: rubberBand; /* referring directly to the animation's @keyframe declaration */
   animation-duration: 2s; /* don't forget to set a duration! */
 }
 
