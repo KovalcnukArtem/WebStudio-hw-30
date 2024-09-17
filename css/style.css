@@ -91,6 +91,12 @@ a:hover {
 .hero-button:active {
   background-color: #2196f3;
 }
+
+.hero-btn:is(:hover, :focus) {
+  animation: heartBeat; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s; /* don't forget to set a duration! */
+}
+
 .business {
   display: block;
   line-height: 34px;
@@ -204,6 +210,18 @@ a:hover {
 .header-nav-item, .header-contact-item {
   margin-left: 15px; /* Зовнішній відступ між елементами */
 }
+
+.header-nav-item:is(:hover, :focus) {
+  animation: wobble; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s; /* don't forget to set a duration! */
+}
+
+.header-nav-link:is(:hover, :focus) {
+  animation: wobble; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s; /* don't forget to set a duration! */
+}
+
+
 .header-logo {
   margin-right: auto; 
 }
@@ -238,6 +256,12 @@ a:hover {
   fill: #2196f3;
   transition: all 1s;
 }
+
+.header-contact-item:is(:hover, :focus) {
+  animation: pulse; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 1s; /* don't forget to set a duration! */
+}
+
 .contact-item {
   fill: #757575;
 }
@@ -546,6 +570,12 @@ a:hover {
 .footer-item {
   margin-top: 20px;
 }
+
+.footer-item-text-two:is(:hover, :focus) {
+  animation: pulse; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 1s; /* don't forget to set a duration! */
+}
+
 .footer-item-text {
   color: #ffffff;
 }
@@ -657,13 +687,17 @@ a:hover {
   height: 24px;
   fill: #ffffff;
 }
-
 .footer-subscribe-btn:hover {
   background-color: rgba(17, 77, 125, 1.00);
   transition: all 200ms;
 }
 .footer-subscribe-btn:active {
   background-color: #2196f3;
+}
+
+.footer-subscribe-btn:is(:hover, :focus) {
+  animation: pulse; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s; /* don't forget to set a duration! */
 }
 
 
@@ -706,6 +740,9 @@ a:hover {
   background-color: #2196f3;
   box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
 }
+
+
+
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
@@ -723,6 +760,12 @@ a:hover {
   box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
   transition:  0.4s;
 }
+
+.portfolio-item:is(:hover, :focus) {
+  animation: pulse; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s; /* don't forget to set a duration! */
+}
+
 .portfolio-headline {
   margin-left: 23px;
   margin-top: 15px;
@@ -982,4 +1025,9 @@ a:hover {
 }
 .modal-form-btn:active {
   background-color: #2196f3;
+}
+
+.modal-form-btn:is(:hover, :focus) {
+  animation: wobble; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s; /* don't forget to set a duration! */
 }
